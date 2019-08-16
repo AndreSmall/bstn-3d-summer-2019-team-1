@@ -1,7 +1,7 @@
 import React from 'react';
-import Main from '../Main/Main'
 import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
+import Filter from '../Filter/Filter'
 
 
 class PageTwo extends React.Component {
@@ -11,7 +11,11 @@ class PageTwo extends React.Component {
 
       <div>
         <Navigation/>
-        <div className='main__hero'>  
+        <div className='main__hero--filter'> 
+          <div className='filter__flex'>
+            <Filter />
+
+          </div> 
           
         </div>
         <Footer />
