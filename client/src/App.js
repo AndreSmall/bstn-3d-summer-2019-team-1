@@ -1,27 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Filter from './components/Filter/Filter'
+import Main from './components/Main/Main'
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Navigation from "./components/Navigation/Navigation";
+// import Card from './components/Card/Card'
+import Footer from './components/Footer/Footer'
+import PageOne from './components/Page1/Page1'
+import PageTwo from './components/Page2/Page2'
+class App extends React.Component {
+  
+  render() {
+    return (
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      <h1>Test Code</h1>
-        <a
-          className="App-link"
-          href={`http://localhost:8080/ping`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Local Express Server ping
-        </a>
-      </header>
-    </div>
-  );
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={PageOne}/>
+          <Route path='/page2' exact component={PageTwo}/>
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App;
+
+        //{/* <iframe src='https://public.tableau.com/views/Book1_test_15659692754240/Sheet4?:showVizHome=no&:embed=true' title='data' width='500' height='500'></iframe> */}
