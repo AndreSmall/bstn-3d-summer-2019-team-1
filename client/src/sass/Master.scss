@@ -7,4 +7,6 @@
 //Imports the mixins and classes that extended into other files
 @import "./Mixins.scss";
 
+  @import '../components/Filter/Filter.scss';
+  @import '../components/Main/Main.scss';
 @import "../components/Navigation/Navigation.scss";

@@ -1,0 +1,37 @@
+.main {
+
+  &__hero {
+    background: url('../assets/andy-holmes-mTqGgeYkfaY-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  &__title-wrapper {
+    padding: 255px 40% 0 122px;
+  }
+
+  &__title {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  &__sub-title {
+    font-size: 55px;
+    color: white;
+        text-shadow: 1px 1px 1px black;
+
+    
+  }
+
+  &__button {
+    @extend %buttons;
+    margin-top: 30px;
+    padding: 5px 60px;
+    box-shadow: 1px 1px 1px black;
+
+  }
+
+}
