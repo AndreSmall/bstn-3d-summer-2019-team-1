@@ -1,0 +1,9 @@
+//Normalizing the browser specific stylings
+@import "./Normalize.scss";
+
+//Imports my variables
+@import "./Variables.scss";
+
+//Imports the mixins and classes that extended into other files
+@import "./Mixins.scss";
+
