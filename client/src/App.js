@@ -1,21 +1,24 @@
 import React from 'react';
-import './App.css';
-// import Graph from './components/graph';
-// import Filter from './components/Filter/Filter'
+import Filter from './components/Filter/Filter'
 import Main from './components/Main/Main'
-
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Navigation from "./components/Navigation/Navigation";
-import Card from './components/Card/Card'
+// import Card from './components/Card/Card'
+import Footer from './components/Footer/Footer'
+import PageOne from './components/Page1/Page1'
+import PageTwo from './components/Page2/Page2'
 class App extends React.Component {
+  
   render() {
     return (
-      <div>
 
-        <Navigation/>
-        <Main />
-        <Card/>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={PageOne}/>
+          <Route path='/page2' exact component={PageTwo}/>
+        </Switch>
 
-      </div>
+      </BrowserRouter>
     )
   }
 }
